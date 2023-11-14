@@ -13,4 +13,4 @@ jobs:
         run: pip install pytest
 
       - name: usar pytest
-        run: python3 test.py
+        run: pytest test.py
