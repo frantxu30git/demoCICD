@@ -6,11 +6,8 @@ jobs:
   tareas:
     runs-on: ubuntu-latest
     steps:
-      - name: Bajar codigo
-        run: git clone https://github.com/ulopeznovoa/AS-CI-CD-ej1.git
+      - name: Crear imagen Docker
+        run: docker build -t frantxu30git/holamundo
 
-      - name: instalar pytest
-        run: pip install pytest
-
-      - name: usar pytest
-        run: pytest test.py
+      - name: probar imagen
+        run: docker run frantxu30git/holamundo
