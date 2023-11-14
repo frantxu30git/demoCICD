@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Bajar codigo
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Pronbar codigo
         run: python3 main.py
