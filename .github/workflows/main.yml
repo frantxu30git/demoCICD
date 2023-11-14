@@ -9,7 +9,7 @@ jobs:
       - name: Bajar codigo
         run: |
           wget https://github.com/ulopeznovoa/AS-CI-CD-ej1.git
-          unzip AS-CI-CD-ej1-main.zip
+          unzip AS-CI-CD-ej1.git
 
       - name: instalar pytest
         run: pip install pytest
