@@ -1,0 +1,10 @@
+name: Miworkflow
+
+on: push
+
+jobs:
+  tareas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar Mensaje
+        run: echo "Hola github actions"
