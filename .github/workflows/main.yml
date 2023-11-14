@@ -6,5 +6,8 @@ jobs:
   tareas:
     runs-on: ubuntu-latest
     steps:
-      - name: Mostrar Mensaje
-        run: echo "Hola github actions"
+      - name: Bajar codigo
+        run: actions/chekout@v4
+
+      - name: Pronbar codigo
+        run: python3 main.py
