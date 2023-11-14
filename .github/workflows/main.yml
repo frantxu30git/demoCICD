@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Bajar codigo
-        run: git clone https://github.com/ulopeznovoa/AS-CI-CD-ej1.git
+        run: |
+          wget https://github.com/ulopeznovoa/AS-CI-CD-ej1.git
+          unzip AS-CI-CD-ej1-main.zip
 
       - name: instalar pytest
         run: pip install pytest
