@@ -7,7 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Bajar codigo
-        uses: actions/checkout@v4
+        uses: git clone https://github.com/ulopeznovoa/AS-CI-CD-ej1.git
 
-      - name: Pronbar codigo
-        run: python3 main.py
+      - name: instalar pytest
+        run: pip install pytest
+
+      - name: usar pytest
+        run: python3 test.py
